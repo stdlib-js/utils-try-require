@@ -35,7 +35,7 @@ bench( pkg, function benchmark( b ) {
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		path = ( i % 2 === 0 ) ? '@stdlib/assert/is-array' : './../lib';
+		path = ( i % 2 === 0 ) ? '@stdlib/assert-is-array' : '.-..-lib';
 		out = tryRequire( path );
 		if ( !isFunction( out ) ) {
 			b.fail( 'should return function' );
@@ -56,7 +56,7 @@ bench( pkg+'::require', function benchmark( b ) {
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		path = ( i % 2 === 0 ) ? '@stdlib/assert/is-array' : './../lib';
+		path = ( i % 2 === 0 ) ? '@stdlib/assert-is-array' : '.-..-lib';
 		out = require( path ); // eslint-disable-line stdlib/no-dynamic-require
 		if ( !isFunction( out ) ) {
 			b.fail( 'should return function' );
