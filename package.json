@@ -1,0 +1,36 @@
+{
+  "name": "@stdlib/utils-try-require",
+  "version": "0.0.0",
+  "description": "Wrap `require` in a try/catch block.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-try-require.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "try",
+    "catch",
+    "safe",
+    "trap",
+    "require",
+    "resolve",
+    "wrap",
+    "error"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
