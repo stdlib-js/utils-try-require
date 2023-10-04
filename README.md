@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-try-require/tags). For example,
+
+```javascript
 import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@v0.1.1-esm/index.mjs';
 ```
 
@@ -107,7 +112,7 @@ if ( x instanceof Error ) {
 <body>
 <script type="module">
 
-import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@v0.1.1-esm/index.mjs';
+import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@esm/index.mjs';
 
 var out = tryRequire( '_abcdefghijklmnopqrstuvwxyz123456789_' );
 if ( out instanceof Error ) {
