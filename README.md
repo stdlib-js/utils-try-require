@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@esm/index.mjs';
+import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@v0.1.1-esm/index.mjs';
 ```
 
 #### tryRequire( id )
@@ -107,7 +107,7 @@ if ( x instanceof Error ) {
 <body>
 <script type="module">
 
-import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@esm/index.mjs';
+import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@v0.1.1-esm/index.mjs';
 
 var out = tryRequire( '_abcdefghijklmnopqrstuvwxyz123456789_' );
 if ( out instanceof Error ) {
