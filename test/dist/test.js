@@ -40,7 +40,7 @@ tape( 'the function returns a resolved module', function test( t ) {
 	out = tryRequire( './../dist' );
 	t.strictEqual( out, tryRequire, 'returns resolved module' );
 
-	out = tryRequire( './../dist/main.js' );
+	out = tryRequire( './../lib/main.js' );
 	t.strictEqual( out, tryRequire, 'returns resolved module' );
 
 	t.end();
@@ -53,28 +53,28 @@ tape( 'the function returns an error if unable to resolve a module', function te
 });
 
 tape( 'the function handles the throwing of literals (string)', function test( t ) {
-	var out = tryRequire( join( __dirname, './fixtures/string.js' ) );
+	var out = tryRequire( join( __dirname, './../fixtures/string.js' ) );
 	t.strictEqual( out instanceof Error, true, 'returns an error' );
 	t.strictEqual( out.message, 'beep', 'sets error message' );
 	t.end();
 });
 
 tape( 'the function handles the throwing of literals (number)', function test( t ) {
-	var out = tryRequire( join( __dirname, './fixtures/number.js' ) );
+	var out = tryRequire( join( __dirname, './../fixtures/number.js' ) );
 	t.strictEqual( out instanceof Error, true, 'returns an error' );
 	t.strictEqual( out.message, '3.14', 'sets error message' );
 	t.end();
 });
 
 tape( 'the function handles the throwing of literals (boolean)', function test( t ) {
-	var out = tryRequire( join( __dirname, './fixtures/boolean.js' ) );
+	var out = tryRequire( join( __dirname, './../fixtures/boolean.js' ) );
 	t.strictEqual( out instanceof Error, true, 'returns an error' );
 	t.strictEqual( out.message, 'false', 'sets error message' );
 	t.end();
 });
 
 tape( 'the function handles the throwing of literals (object)', function test( t ) {
-	var out = tryRequire( join( __dirname, './fixtures/object.js' ) );
+	var out = tryRequire( join( __dirname, './../fixtures/object.js' ) );
 	t.strictEqual( out instanceof Error, true, 'returns an error' );
 	t.strictEqual( out.message, '{"beep":"boop"}', 'sets error message' );
 	t.end();
