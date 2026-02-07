@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@deno/mod.js';
+import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@v0.2.3-deno/mod.js';
 ```
 
 #### tryRequire( id )
@@ -102,7 +102,7 @@ if ( x instanceof Error ) {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@deno/mod.js';
+import tryRequire from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-try-require@v0.2.3-deno/mod.js';
 
 var out = tryRequire( '_abcdefghijklmnopqrstuvwxyz123456789_' );
 if ( out instanceof Error ) {
