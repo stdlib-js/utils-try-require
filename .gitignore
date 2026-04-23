@@ -175,6 +175,10 @@ acs-*.bib
 *.ind
 *.ist
 
+# Git #
+#######
+.worktrees
+
 # Visual Studio #
 #################
 .vscode/
