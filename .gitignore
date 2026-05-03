@@ -25,6 +25,7 @@ package.json.copy
 ###############
 build/
 downloads/
+plans/
 reports/
 tmp/
 
